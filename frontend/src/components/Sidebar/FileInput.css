@@ -1,0 +1,67 @@
+.sidebar-file-input.file-input-error .file-button {
+  background-color: #fcb8c0;
+}
+.sidebar-file-input.file-input-error .file-button:hover,
+.sidebar-file-input.file-input-error .file-button:active {
+  outline: 1.5px solid #fcb8c0;
+}
+.sidebar-file-input .file-button:hover,
+.sidebar-file-input .file-button:active {
+  outline: 1.5px solid #0be19b;
+}
+.sidebar-file-input { 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: #e6e6e6;
+  border: 1px dashed #ffffff;
+  border-radius: 5px;
+  padding: 0.75rem;
+  margin: -0.2rem 0.7rem 0;
+}
+.sidebar-file-input .file-name {
+  font-size: 0.7rem;
+  color: #e6e6e6;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sidebar-file-input .remove-file-button {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  top: -0.1rem;
+}
+.sidebar-file-input.file-input--selected {
+  padding: 0.7rem 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.file-label {
+  font-size: 0.65rem;
+  color: #ffffff;
+  margin-left: 0.85rem;
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+.sidebar-file-input .file-button {
+  background-color: #0be19b;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: #000000;
+}

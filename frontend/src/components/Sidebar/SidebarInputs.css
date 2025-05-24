@@ -1,0 +1,61 @@
+.sidebar-inputs input.input-error {
+  background-color: #fcb8c0;
+}
+.sidebar-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0 0.5rem;
+}
+.sidebar-inputs label {
+  display: flex;
+  align-items: center;
+}
+.sidebar-inputs .label-text {
+  flex: 0 0 170px;
+  white-space: nowrap;
+  text-align: right;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+.sidebar-inputs input {
+  flex: none;
+  width: 65px;
+  padding: 0.25rem 0.3rem;
+  font-size: 0.7rem;
+  background-color: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 5px;
+  appearance: none;
+  margin-top: 0;
+}
+.sidebar-inputs input::placeholder {
+  font-size: 0.72rem;
+  opacity: 0.6;
+}
+.sidebar-inputs input[type="text"]:focus,
+.sidebar-inputs input[type="number"]:focus {
+  outline: 1.5px solid #f0f0f0;
+}
+.sidebar-inputs button:focus {
+  outline: none;
+}
+.sidebar-inputs input::-webkit-inner-spin-button,
+.sidebar-inputs input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sidebar-inputs input[type=number] {
+  appearance: textfield;
+}
+.sidebar-inputs .file-label:first-of-type {
+  margin-top: 0.8rem;
+}
+.sidebar-inputs input.input-error:focus {
+  outline: 1.5px solid #fcb8c0;
+}

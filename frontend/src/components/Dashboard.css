@@ -1,0 +1,92 @@
+.dashboard-value {
+  position: absolute;
+  bottom: 2.1rem;
+  left: 0.7rem;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.dashboard-value { 
+color: #013143; 
+} 
+.dashboard-label {
+  position: absolute;
+  bottom: 1.1rem;         
+  left: 0.7rem;
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #013143;
+}  
+.dashboard-square {
+  position: fixed;            
+  top: calc(70px + 1.2rem);
+  left: calc(255px + 1.2rem);
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: auto 1fr;
+  row-gap: 0.8rem;      
+  column-gap: 1.2rem;                   
+  padding: 0.8rem 1.2rem 1.2rem;             
+}
+.dashboard-title {
+  grid-column: 1 / -1;
+  margin: 0;                    
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #213547;
+  align-self: start;           
+}
+.dashboard-box {
+  width: 100%;                  
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  background-color: inherit;  
+}
+.box1 {
+  background-color: #d4f4ff;
+}
+.box2 {
+  background-color: #fff4de;
+}
+.box3 {
+  background-color: #dbf6ef;
+}
+.box1, .box2, .box3 {
+  position: relative;
+}
+.icon-circle {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 .icon-circle img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.box2 .icon-circle img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.1rem;
+}
+.box3 .icon-circle img {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+.box1 .icon-circle {
+  background-color: #013143;
+}
+.box2 .icon-circle {
+  background-color: #ffaf19;
+}
+.box3 .icon-circle {
+  background-color: #0be19b;
+}

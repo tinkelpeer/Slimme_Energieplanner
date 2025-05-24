@@ -1,0 +1,123 @@
+.actions-table input.input-error {
+  background-color: #fcb8c0;
+}
+.actions-table input.input-error:focus {
+  outline: 1.5px solid #fcb8c0;
+}
+.add-action-button.error {
+  background-color: #fcb8c0;
+}
+.add-action-button.error:hover,
+.add-action-button.error:active {
+  outline: 1.5px solid #fcb8c0;
+}
+.remove-action-button:active,
+.remove-action-button:hover {
+  outline: 1.5px solid #ff6b6b;
+}
+.add-action-button:hover,
+.add-action-button:active {
+  outline: 1.5px solid #0be19b;
+}
+.sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem 0.8rem;
+}
+.sidebar-actions .section-title {
+  font-size: 0.65rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.actions-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 0.6rem;
+}
+.actions-table thead th.actions {
+  visibility: hidden;
+  border: none;
+}
+.actions-table th.start-time,
+.actions-table td:nth-child(1) {
+  width: 50px;
+}
+.actions-table th.duration,
+.actions-table td:nth-child(2) {
+  width: 40px;
+}
+.actions-table th.power,
+.actions-table td:nth-child(3) {
+  width: 60px;
+}
+.actions-table th.actions,
+.actions-table td:nth-child(4) {
+  width: 40px;
+}
+.actions-table thead th {
+  border: 1px solid #ccc;
+  padding: 0.15rem;
+  font-size: 0.65rem;
+  color: #000;
+  font-weight: 400;
+}
+.actions-table tbody td {
+  border: none;
+  padding: 0.2rem 0.2rem;
+}
+.actions-table tbody td:first-child {
+  padding-left: 0;
+}
+.actions-table tbody td:nth-child(3) {
+  padding-right: 0;
+}
+.actions-table td:nth-child(4) {
+  padding-left: 0.4rem;
+}
+.actions-table th {
+  background-color: #ffffff;
+  text-align: center;
+}
+.actions-table thead th {
+  padding: 0.15rem 0.15rem 0.15rem 0.5rem;
+  text-align: left;
+}
+.actions-table td input {
+  width: 100%;
+  padding: 0.3rem 0.35rem;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.actions-table input::-webkit-inner-spin-button,
+.actions-table input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.add-action-button,
+.remove-action-button {
+  background-color: #0be19b;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+  color: #000000;
+  font-size: 0.65rem;
+  cursor: pointer;
+  align-self: center;
+  display: inline-flex;           
+  align-items: center;        
+  justify-content: center;        
+  line-height: 1;    
+}
+.sidebar-actions .add-action-button {
+  margin-bottom: 1rem; 
+}
+.remove-action-button {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+.add-action-button {
+  align-self: flex-start;
+}

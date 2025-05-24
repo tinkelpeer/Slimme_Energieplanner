@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: slimme-energie-backend
+    ports:
+      - '3000:3000'               # expose NestJS API op poort 3000
+    env_file:
+      - ./backend/.env            # productie-variabelen (maak .env van .env.example)
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: slimme-energie-frontend
+    ports:
+      - '80:80'                   # nginx serveert de statische build op poort 80
+    depends_on:
+      - backend                  # wacht tot backend beschikbaar is
+    restart: unless-stopped
+
+# netwerk is automatisch een bridge; je kunt hier extra opties toevoegen indien nodig

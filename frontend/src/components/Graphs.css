@@ -1,0 +1,163 @@
+.graphs-container {
+  position: fixed;
+  top:    calc(70px + 1.2rem);
+  bottom: 1.2rem;
+  left:   calc(255px + 1.2rem + 22.8rem + 1.2rem);
+  right:  1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:    repeat(2, 1fr);   
+  column-gap: 1.2rem;
+  row-gap:    1.2rem;                 
+}
+.graph-box {
+  position: relative; 
+  width: 100%;
+  height: 100%;          
+  border-radius: 15px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.graph-title {
+  position: absolute;
+  top: 0.8rem;
+  left: 1.2rem;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #213547;   
+  z-index: 2; 
+}
+.graph1 .recharts-cartesian-axis-tick text {
+  font-size: 0.5rem;
+  fill: #666666; 
+}
+.graph2 .recharts-cartesian-axis-tick text {
+  font-size: 0.5rem;
+  fill: #666666; 
+}
+.graph1 .chart-wrapper {  
+  position: absolute;
+  top:    2.7rem;        
+  right:  1.2rem;
+  bottom: 0rem;
+  left:   -1.2rem;
+}
+.graph1 .recharts-legend-wrapper {
+  left: 60% !important;
+  transform: translateX(-50%);
+}
+.graph1 .recharts-legend-item-text {
+  font-size: 0.6rem;
+  color: #013243 !important;
+  font-weight: 600;
+}
+.graph1 .recharts-line-curve {
+  stroke: #0893c5 !important;
+  stroke-width: 2.5px !important;
+}
+.graph1 .recharts-legend-item-icon,
+.graph1 .recharts-legend-item-text {
+  vertical-align: middle;
+}
+.graph1 .recharts-legend-wrapper {
+  bottom: 0.8rem !important;     
+}
+.recharts-tooltip-label,
+.recharts-tooltip-item-name,
+.recharts-tooltip-item-value {
+  color: #013243;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.recharts-tooltip-item-separator {
+  font-size: 0;
+}
+.recharts-tooltip-item-separator::before {
+  content: ":";             
+  font-size: 0.75rem;        
+  font-weight: 500;
+  color: #013243;
+  margin-right: 0.4ch;      
+}
+.graph2 .chart-wrapper {
+  position: absolute;
+  top:    2.7rem;
+  right:  1.2rem;
+  bottom: 0rem;
+  left:   -1.2rem;
+}
+.graph2 .recharts-legend-wrapper {
+  left: 58% !important;
+  transform: translateX(-50%);
+  bottom: 0.8rem !important;
+}
+.graph2 .recharts-legend-item-text {
+  font-size: 0.6rem;
+  color: #013243 !important;
+  font-weight: 600;
+}
+.graph2 .recharts-legend-item-icon,
+.graph2 .recharts-legend-item-text {
+  vertical-align: middle;
+}
+.graph2 .recharts-legend-item + .recharts-legend-item {
+  margin-left: 0.5rem;   
+}
+.graph3 .recharts-cartesian-axis-tick text {
+  font-size: 0.5rem;
+  fill: #666666;
+}
+.graph3 .chart-wrapper {
+  position: absolute;
+  top:    2.7rem;
+  right:  1.2rem;
+  bottom: 0;
+  left:   -1.2rem;
+}
+.graph3 .recharts-legend-wrapper {
+  left: 60% !important;
+  transform: translateX(-50%);
+  bottom: 0.8rem !important;
+}
+.graph3 .recharts-legend-item-text {
+  font-size: 0.6rem;
+  color: #013243 !important;
+  font-weight: 600;
+}
+.graph3 .recharts-line-curve {
+  stroke: #00d38d !important;
+  stroke-width: 2.5px !important;
+}
+.graph3 .recharts-legend-item-icon,
+.graph3 .recharts-legend-item-text {
+  vertical-align: middle;
+}
+.graph4 .recharts-cartesian-axis-tick text {
+  font-size: 0.5rem;
+  fill: #666666;
+}
+.graph4 .chart-wrapper {
+  position: absolute;
+  top:    2.7rem;
+  right:  1.2rem;
+  bottom: 0;
+  left:   -1.2rem;
+}
+.graph4 .recharts-legend-wrapper {
+  left: 60% !important;
+  transform: translateX(-50%);
+  bottom: 0.8rem !important;
+}
+.graph4 .recharts-legend-item-text {
+  font-size: 0.6rem;
+  color: #013243 !important;
+  font-weight: 600;
+}
+.graph4 .recharts-legend-item-icon,
+.graph4 .recharts-legend-item-text {
+  vertical-align: middle;
+}
+.graph4 .recharts-line-curve {
+  stroke-width: 2.5px !important;
+}
